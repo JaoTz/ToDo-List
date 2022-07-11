@@ -1,0 +1,42 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "todo-list exercice",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon --config nodemon.json src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaoTz/ToDo-List.git"
+  },
+  "keywords": [
+    "todo",
+    "task"
+  ],
+  "author": "João Pedro Gomes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JaoTz/ToDo-List/issues"
+  },
+  "homepage": "https://github.com/JaoTz/ToDo-List#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^2.1.0",
+    "mysql2": "^2.3.3",
+    "pino": "^8.1.0",
+    "pino-pretty": "^8.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1"
+  }
+}
