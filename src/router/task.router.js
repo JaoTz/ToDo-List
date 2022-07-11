@@ -1,7 +1,7 @@
 const express = require('express');
-const TaskService = require('../service/task');
-
+const { checkAuth } = require('../middleware/checkAuth');
 const router = express.Router();
+router.use(checkAuth);
 
 router.get('/:id', TaskService.getById);
 router.get('/', TaskService.getAll);

@@ -1,7 +1,7 @@
 const express = require('express');
-const ProjectService = require('../service/project');
-
+const { checkAuth } = require('../middleware/checkAuth');
 const router = express.Router();
+router.use(checkAuth);
 
 router.get('/:id', ProjectService.getById);
 router.get('/', ProjectService.getAll);
